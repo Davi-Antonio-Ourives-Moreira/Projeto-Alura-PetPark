@@ -1,0 +1,81 @@
+.newsletter{
+    background-color: var(--cor-bege-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 30px;
+}
+
+.newsletter h2{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-coral);
+    font-size: 30px;
+}
+
+.newsletter p{
+    font-size: 18px;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.botao-enviar{
+    background-color: var(--cor-coral);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 32rem;
+    cursor: pointer;
+    padding: 8px 30px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.formulario-input{
+    background-color: transparent;
+    border: 1px solid var(--cor-cinza-escuro);
+    border-radius: 32px;
+    padding: 8px 20px;
+    font-size: 17px;
+}
+
+.grupo-opcoes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.opcao input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.opcao input[type="checkbox"] + span{
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--cor-cinza-claro);
+    background-color: transparent;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 0 0 3px white;
+}
+
+.opcao{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding-left: 28px;
+}
+
+.opcao input[type="checkbox"]:checked + span{
+    background-color: var(--cor-coral);
+}

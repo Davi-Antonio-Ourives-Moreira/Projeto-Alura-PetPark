@@ -1,0 +1,24 @@
+.destaque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-bege-claro);
+    padding: 70px 0;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destaque-titulo{
+    color: var(--cor-coral);
+    font-family: var(--fonte-titulo);
+    font-size: 64px;
+    width: 500px;
+}
+
+.destaque-titulo > span{
+    color: var(--cor-verde-escuro);
+}

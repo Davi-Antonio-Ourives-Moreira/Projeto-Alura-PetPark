@@ -1,0 +1,76 @@
+.servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 0;
+    gap: 70px;
+}
+
+.servicos-titulo{
+    color: var(--cor-coral);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.servicos-lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.servicos-lista > li > .link{
+    position: relative;
+    background-color: var(--cor-bege-claro);
+    text-decoration: none;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-coral);
+    border-radius: 16px;
+    padding: 1em 2em;
+}
+
+.link::before{
+    content: "";
+    position: absolute;
+    left: -10;
+    bottom: 50%;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(0);
+    transition: transform 0.3s ease, left 0.3s ease;
+}
+
+.banho-e-tosa > .link::before{
+    background-image: url("../../icons/banho-e-tosa.png");
+}
+
+.hospedagem > .link::before{
+    background-image: url("../../icons/hospedagem.png");
+}
+
+.veterinario > .link::before{
+    background-image: url("../../icons/veterinario.png");
+}
+
+.adestramento > .link::before{
+    background-image: url("../../icons/adestramento.png");
+}
+
+.petsiter > .link::before{
+    background-image: url("../../icons/petsiter.png");
+}
+
+.servicos-lista > li > .link:hover{
+    padding-left: 45px;
+}
+
+.link:hover::before {
+    transform: scale(1) translateY(50%);
+    left: 0.5rem;
+}

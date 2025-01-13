@@ -1,0 +1,28 @@
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.rodape-bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icons-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.icone-rodape{
+    margin-right: 0.5rem;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}

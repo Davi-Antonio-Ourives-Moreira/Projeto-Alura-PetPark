@@ -1,0 +1,77 @@
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0 12%;
+    padding-bottom: 36px;
+}
+
+.alinhamento-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    width: 100%;
+}
+
+.label-busca input{
+    border-radius: 32px;
+    border: 1px solid var(--cor-cinza-escuro);
+    padding: 8px 16px;
+    outline: none;
+    width: 464px;
+
+    &::placeholder{
+        background-image: url("../../icons/busca.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        color: var(--cor-cinza-claro);
+        font-family: var(--fonte-texto);
+    }
+}
+
+.botao-login{
+    display: flex;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: var(--fonte-texto);
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.navegacao{
+    width: 100%;
+}
+
+.menu-lista{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.menu-link{
+    color: var(--cor-cinza-escuro);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 1px;
+
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--cor-cinza-escuro);
+        transition: width 0.3s ease;
+    }
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after{
+    width: 100%;
+}
