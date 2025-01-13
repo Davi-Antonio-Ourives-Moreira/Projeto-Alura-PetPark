@@ -38,13 +38,3 @@ body{
     box-sizing: border-box;  
     overflow-x: hidden;
 }
-
-.container{
-    width: 1200px;
-}
-
-@media screen and (max-width: 768px) {
-    .container{
-        width: 648px;
-    }
-}

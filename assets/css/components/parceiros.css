@@ -37,3 +37,13 @@
 .lista-parceiros > div:nth-child(even):hover img{
     transform: rotate(-360deg);
 }
+
+@media screen and (max-width: 626px) {
+    .parceiros{
+        text-align: center;
+    }
+
+    .lista-parceiros{
+        gap: 10px;
+    }
+}

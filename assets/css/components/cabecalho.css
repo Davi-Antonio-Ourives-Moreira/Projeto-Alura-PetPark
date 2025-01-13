@@ -31,6 +31,14 @@
     }
 }
 
+.menu-button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+
 .botao-login{
     display: flex;
     outline: none;
@@ -74,4 +82,43 @@
 .menu-link:hover::after,
 .menu-link:focus::after{
     width: 100%;
+}
+
+@media screen and (max-width: 1081px) {
+    .cabecalho{
+        padding: 0 8%;
+    }
+}
+
+@media screen and (max-width: 971px) {
+    .alinhamento-cabecalho{
+        flex-wrap: wrap;
+    }   
+
+    .label-busca{
+        order: 1;
+        display: flex;
+        flex: 1 1 100%;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .icone-logo{
+        object-fit: contain;
+        height: 60px;
+        align-items: center;
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu-lista{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
 }

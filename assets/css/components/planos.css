@@ -73,3 +73,24 @@
     font-weight: 600;
     font-size: 15px;
 }
+
+@media screen and (max-width: 859px) {
+    .planos-background{
+        width: 550px;
+    }
+
+    .lista-planos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .planos-background{
+        width: auto;
+    }
+
+    .planos-titulo{
+        text-align: center;
+    }
+}

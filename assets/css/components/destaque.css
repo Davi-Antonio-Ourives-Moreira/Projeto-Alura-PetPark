@@ -22,3 +22,39 @@
 .destaque-titulo > span{
     color: var(--cor-verde-escuro);
 }
+
+@media screen and (max-width: 1114px) {
+    .destaque{
+        padding: 60px;
+    }
+
+    .banner{
+       flex-wrap: wrap-reverse;
+       justify-content: center;
+    }
+
+    .destaque-titulo{
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner > img{
+        width: 400px;
+    }
+
+    .destaque-titulo{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .banner > img{
+        width: 320px;
+    }
+
+    .destaque-titulo{
+        font-size: 35px;
+    }
+}

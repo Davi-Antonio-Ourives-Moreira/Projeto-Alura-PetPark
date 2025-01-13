@@ -74,3 +74,17 @@
     transform: scale(1) translateY(50%);
     left: 0.5rem;
 }
+
+@media screen and (max-width: 950px) {
+    .servicos-lista{
+        gap: 60px 30px;
+        justify-content: center;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .servicos-lista{
+        flex-direction: column;
+    }
+}

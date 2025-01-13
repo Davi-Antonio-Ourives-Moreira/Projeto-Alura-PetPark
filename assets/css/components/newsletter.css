@@ -79,3 +79,14 @@
 .opcao input[type="checkbox"]:checked + span{
     background-color: var(--cor-coral);
 }
+
+@media screen and (max-width: 603px) {
+    .newsletter{
+        text-align: center;
+    }
+
+    .grupo-opcoes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
