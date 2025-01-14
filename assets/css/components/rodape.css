@@ -41,4 +41,8 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    .rodape-bg > span{
+        text-align: center;
+    }
 }
