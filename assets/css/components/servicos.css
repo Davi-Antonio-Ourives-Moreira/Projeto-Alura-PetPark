@@ -83,7 +83,7 @@
     }
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (max-width: 475px) {
     .servicos-lista{
         flex-direction: column;
     }
